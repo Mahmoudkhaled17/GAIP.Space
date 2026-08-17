@@ -11,7 +11,8 @@ export const resolveImageUrl = (path) => {
 };
 
 const api = axios.create({
-  baseURL: API_BASE
+  baseURL: API_BASE,
+  timeout: 30000,
 });
 
 export default api;
